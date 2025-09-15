@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ghcr.io/nielskrijnen/nexupport-self-hosted:latest
+    container_name: nexupport-self-hosted-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
