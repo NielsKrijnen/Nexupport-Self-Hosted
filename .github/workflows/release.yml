@@ -29,5 +29,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/$(echo ${{ github.repository }} | tr '[:lower:]'):${{ github.ref_name }}
-            ghcr.io/$(echo ${{ github.repository }} | tr '[:lower:]'):latest
+            ghcr.io/nielskrijnen/nexupport-self-hosted:${{ github.ref_name }}
+            ghcr.io/nielskrijnen/nexupport-self-hosted:latest
